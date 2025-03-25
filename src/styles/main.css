@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black-clr: #252323;
+  --gray-clr: #70798c;
+  --white-clr: #f5f1ed;
+  --pink-clr: #dad2bc;
+  --brown-clr: #a99985;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.986rem;
+}
+
+h2 {
+  font-size: 2.488rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
