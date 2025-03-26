@@ -14,19 +14,41 @@
 </head>
 
 <body>
-    <h1>Frequently Asked Questions</h1>
-    <ol>
-        <li><strong>What is your name?</strong>
-            <p>My name is Alejandra Roncancio.</p>
-        </li>
-        <li><strong>Where are you from?</strong>
-            <p>I am from Gachetá.</p>
-        </li>
-        <li><strong>What is your nationality?</strong>
-            <p>I am Colombian.</p>
-        </li>
-    </ol>
+    <header class="header">
+        <a class="header__logo" href="index.html">
+            <img src="./src/img/icon.webp" alt="Illustration">
+            <h3>My Personal Blog</h3>
+        </a>
 
+        <button class="open-btn"><i class='bx bx-menu'></i></button>
+
+        <nav class="header__navbar">
+            <button class="close-btn"><i class='bx bx-x'></i></button>
+
+            <ul class="header__navbar__list">
+                <li class="header__navbar__item">
+                    <a href="#" class="header__navbar__link">
+                        <i class='bx bxs-home'></i>
+                        Home
+                    </a>
+                </li>
+                <li class="header__navbar__item">
+                    <a href="#" class="header__navbar__link">
+                        <i class='bx bxs-food-menu'></i>
+                        Section 1
+                    </a>
+                </li>
+                <li class="header__navbar__item">
+                    <a href="#" class="header__navbar__link">
+                        <i class='bx bxs-graduation'></i>
+                        Section 2
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

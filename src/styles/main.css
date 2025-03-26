@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid rgba(0, 0, 255, 0.075);
 }
 
 html,
@@ -34,6 +35,12 @@ ol {
   list-style: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 h1 {
   font-size: 2.986rem;
 }
@@ -48,4 +55,129 @@ h3 {
 
 h4 {
   font-size: 1.728rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lora", serif;
+}
+
+p,
+a,
+ul,
+li {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-clr);
+  padding: 1rem 2rem;
+  background-color: var(--brown-clr);
+  position: relative;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo img {
+  width: 3rem;
+}
+
+.header__navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+  background-color: var(--brown-clr);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in-out 0.2s;
+}
+
+.header__navbar.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__navbar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.header__navbar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.header__navbar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+
+.header__navbar__link:hover {
+  color: var(--pink-clr);
+  border-bottom: 2px solid var(--pink-clr);
+}
+
+.open-btn,
+.close-btn {
+  color: var(--white-clr);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 890px) {
+  .header__navbar {
+    position: static;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__navbar__list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .open-btn,
+  .close-btn {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
