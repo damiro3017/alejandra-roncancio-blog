@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
-  outline: 1px solid var(--yellow-clr);
   scroll-behavior: smooth;
   scrollbar-gutter: auto;
 }
@@ -161,13 +160,21 @@ li {
   border-bottom: 2px solid var(--yellow-clr);
 }
 
+.header__navbar__link i {
+  font-size: 1.5rem;
+}
+
 .open-btn,
 .close-btn {
   color: var(--white-clr);
-  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.open-btn i,
+.close-btn i {
+  font-size: 1.5rem;
 }
 
 /* Hero Section */
