@@ -12,13 +12,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid rgba(0, 0, 255, 0.2);
   font-size: 13px;
+  outline: 1px solid var(--yellow-clr);
+  scroll-behavior: smooth;
+  scrollbar-gutter: auto;
 }
 
 html,
 body {
-  height: 100%;
+  height: auto;
 }
 
 img {
@@ -70,6 +72,13 @@ a,
 ul,
 li {
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 /* Header section */
@@ -157,104 +166,76 @@ li {
 
 /* Hero section */
 .hero__section {
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: var(--white-clr);
-  color: var(--black-clr);
-  width: 100%;
-  height: calc(100vh - 5rem);
+  height: 100vh;
+}
+
+.hero__section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero__section__info {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   text-wrap: balance;
-  margin-top: 2rem;
-  width: 100%;
   order: 2;
 }
 
 .hero__section__img {
   order: 1;
+  margin: 0 auto;
+  max-width: 25rem;
 }
 
 .hero__section__img img {
-  border-radius: 100%;
   width: 100%;
-  max-width: 20rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  pointer-events: none;
+  border-radius: 100%;
 }
 
 /* Writing Task section */
-.writing__task {
-  padding: 2rem 0 0 0;
+.writing__task__section {
+  padding-top: 3rem;
   background-color: var(--blue-clr);
   color: var(--white-clr);
 }
 
-.writing__task h2,
-h3 {
+.writing__task__section h2 {
   text-align: center;
 }
 
-.writing__task-evidence {
-  padding: 2rem;
+.writing__task__section h3 {
+  text-align: center;
 }
 
-.writing__task-evidence h3 {
-  margin-bottom: 2rem;
-}
-
-.writing__task-evidence-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.writing__task-evidence-flex img {
+.writing__task-evidence-img img {
   border-radius: 0.25rem;
+  margin-top: 1rem;
 }
 
-.writing__task-questions {
-  padding: 2rem;
-  color: var(--black-clr);
+.writing__task__section-questions {
   background-color: var(--gray-clr);
+  color: var(--black-clr);
 }
 
-.writing__task-questions-img {
+.writing__task__section-questions-list {
   margin-top: 2rem;
 }
 
-.writing__task-questions-img img {
-  border-radius: 0.25rem;
-  width: 100%;
+.writing__task__section-questions-list h4 {
+  margin-bottom: 1rem;
 }
 
-.task__questions__list {
-  margin-top: 2rem;
+.writing__task__section-questions-list ul {
+  margin-left: 1rem;
 }
 
-.task__questions__list ul {
-  margin: 1rem 0 2rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.task__questions__list em {
-  font-weight: 600;
-}
-
-.writing__task-about-me {
-  padding: 2rem;
+.writing__task__section-about-me {
   background-color: var(--white-clr);
   color: var(--black-clr);
 }
@@ -265,29 +246,34 @@ h3 {
 
 .writing__task-about-me-img img {
   border-radius: 0.25rem;
-  width: 100%;
 }
 
 .writing__task-about-me-info {
   margin-top: 2rem;
 }
 
-.writing__task-about-me-info p {
-  margin: 1rem 0 2rem 0;
+.writing__task-about-me-info h4:nth-of-type(2) {
+  margin-top: 2rem;
 }
 
-/* Speaking section */
-.speaking__section {
+.writing__task-about-me-info p {
+  margin-top: 1rem;
+}
+
+/* Speaking Task section */
+.speaking__task__section {
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+  text-align: center;
+  justify-content: center;
+}
+
+.speaking__task__section__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2rem;
-  text-align: center;
-  height: calc(100vh - 3rem);
   gap: 3rem;
-  background-color: var(--blue-clr);
-  color: var(--gray-clr);
 }
 
 @media screen and (min-width: 890px) {
@@ -295,6 +281,7 @@ h3 {
     font-size: 16px;
   }
 
+  /* Header section */
   .header__navbar {
     position: static;
     height: auto;
