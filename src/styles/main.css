@@ -66,6 +66,7 @@ h2,
 h3,
 h4 {
   font-family: "Lora", serif;
+  text-wrap: balance;
 }
 
 p,
@@ -235,7 +236,6 @@ li {
 
 /* Evidence Subsection */
 .writing__task-evidence-img {
-  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -370,6 +370,7 @@ li {
 
   .writing__task__section-questions-list {
     flex: 1;
+    margin-top: 0;
   }
 
   /* About Me Subsection */
