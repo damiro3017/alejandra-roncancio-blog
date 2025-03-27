@@ -102,6 +102,7 @@ li {
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-weight: 600;
 }
 
 .header__logo img {
@@ -184,7 +185,7 @@ li {
   align-items: center;
   justify-content: center;
   background-color: var(--white-clr);
-  height: 100%;
+  min-height: 100vh;
 }
 
 .hero__section__wrapper {
