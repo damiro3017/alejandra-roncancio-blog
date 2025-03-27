@@ -191,6 +191,105 @@ li {
   pointer-events: none;
 }
 
+/* Writing Task section */
+.writing__task {
+  padding: 2rem 0 0 0;
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+}
+
+.writing__task h2,
+h3 {
+  text-align: center;
+}
+
+.writing__task-evidence {
+  padding: 2rem;
+}
+
+.writing__task-evidence h3 {
+  margin-bottom: 2rem;
+}
+
+.writing__task-evidence-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.writing__task-evidence-flex img {
+  border-radius: 0.25rem;
+}
+
+.writing__task-questions {
+  padding: 2rem;
+  color: var(--black-clr);
+  background-color: var(--gray-clr);
+}
+
+.writing__task-questions-img {
+  margin-top: 2rem;
+}
+
+.writing__task-questions-img img {
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.task__questions__list {
+  margin-top: 2rem;
+}
+
+.task__questions__list ul {
+  margin: 1rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task__questions__list em {
+  font-weight: 600;
+}
+
+.writing__task-about-me {
+  padding: 2rem;
+  background-color: var(--white-clr);
+  color: var(--black-clr);
+}
+
+.writing__task-about-me-img {
+  margin-top: 2rem;
+}
+
+.writing__task-about-me-img img {
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.writing__task-about-me-info {
+  margin-top: 2rem;
+}
+
+.writing__task-about-me-info p {
+  margin: 1rem 0 2rem 0;
+}
+
+/* Speaking section */
+.speaking__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  height: calc(100vh - 3rem);
+  gap: 3rem;
+  background-color: var(--blue-clr);
+  color: var(--gray-clr);
+}
+
 @media screen and (min-width: 890px) {
   * {
     font-size: 16px;
