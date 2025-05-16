@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 16px;
   scroll-behavior: smooth;
   scrollbar-gutter: auto;
 }
@@ -319,10 +319,6 @@ li {
 
 /* Media Queries */
 @media screen and (min-width: 890px) {
-  * {
-    font-size: 16px;
-  }
-
   /* Header Section */
   .header__navbar {
     position: static;
