@@ -312,6 +312,11 @@ li {
   gap: 3rem;
 }
 
+/* Food and Drink Section */
+#practice-speaking-img {
+  margin-top: 2rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 890px) {
   * {
